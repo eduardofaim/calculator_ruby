@@ -12,32 +12,68 @@ operator = gets.chomp()
 
 case operator.downcase
 
-when '1'
-    def addition_operation
-    puts "\n Enter a Number:"
-    num1 = gets.chomp()
+    when '1'
+        def addition_operation
+        puts "\n Enter a Number:"
+        num1 = gets.chomp()
     
-    puts "\n Enter another Number:"
-    num2 = gets.chomp()
+        puts "\n Enter another Number:"
+        num2 = gets.chomp()
 
-    result = (num1.to_f + num2.to_f)
+        result = (num1.to_f + num2.to_f)
 
-    puts "\n The sum is: #{num1} + #{num2} = #{result}"
-    end
+        puts "\n The sum is: #{num1} + #{num2} = #{result}"
+        end
     addition_operation()
 
-when '2'
-    def subtraction_operation
-    puts "\n Enter a Number:"
-    num1 = gets.chomp()
+    when '2'
+        def subtraction_operation
+        puts "\n Enter a Number:"
+        num1 = gets.chomp()
     
-    puts "\n Enter another Number:"
-    num2 = gets.chomp()
+        puts "\n Enter another Number:"
+        num2 = gets.chomp()
 
-    result = (num1.to_f - num2.to_f)
+        result = (num1.to_f - num2.to_f)
 
-    puts "\n The subtraction is: #{num1} - #{num2} = #{result}"
-    end
+        puts "\n The subtraction is: #{num1} - #{num2} = #{result}"
+        end
     subtraction_operation()
+
+    when '3'
+        def multiplication_operation
+        puts "\n Enter a Number:"
+        num1 = gets.chomp()
+        
+        puts "\n Enter another Number:"
+        num2 = gets.chomp()
+
+        result = (num1.to_f * num2.to_f)
+
+        puts "\n The multiplication is: #{num1} * #{num2} = #{result}"
+        end
+    multiplication_operation()
+
+    when '4'
+        def division_operation
+        puts "\n Enter a Number:"
+        num1 = gets.chomp()
+        
+        puts "\n Enter another Number:"
+        num2 = gets.chomp()
+
+        result = (num1.to_f / num2.to_f)
+
+        puts "\n The division is: #{num1} / #{num2} = #{result}"
+        end
+    division_operation()
+
+    when 'E'
+        puts "Thank you for using Ruby Calculator"
+    end
+    
+    else
+        puts "Invalid Operator" 
+    end
 end
 
