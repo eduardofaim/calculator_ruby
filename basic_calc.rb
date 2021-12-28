@@ -1,7 +1,7 @@
 #Calculator in Ruby
 
 loop do
-puts "\nChose an operation:
+puts "\nHello, choose an operation:
 
 ADD ( + ) ========> [ 1 ]
 SUBTRACT ( - ) ===> [ 2 ]
@@ -25,6 +25,7 @@ operator = gets.chomp()
                     result = (num1.to_f + num2.to_f)
 
                     puts "\nThe sum is: #{num1} + #{num2} = #{result}"
+                    puts "\n==============================================================="
                 end
             addition_operation()
 
@@ -40,6 +41,7 @@ operator = gets.chomp()
                     result = (num1.to_f - num2.to_f)
 
                     puts "\nThe subtraction is: #{num1} - #{num2} = #{result}"
+                    puts "\n==============================================================="
                 end
             subtraction_operation()
 
@@ -55,6 +57,7 @@ operator = gets.chomp()
                     result = (num1.to_f * num2.to_f)
 
                     puts "\nThe multiplication is: #{num1} * #{num2} = #{result}"
+                    puts "\n==============================================================="
                 end
             multiplication_operation()
 
@@ -70,6 +73,7 @@ operator = gets.chomp()
                     result = (num1.to_f / num2.to_f)
 
                     puts "\nThe division is: #{num1} / #{num2} = #{result}"
+                    puts "\n==============================================================="
                 end
             division_operation()
 
@@ -78,7 +82,7 @@ operator = gets.chomp()
                 break
 
             else
-                puts "\nInvalid Input"
-                break
+                puts "\nInvalid Input, try again!"
+                puts "\n==============================================================="
         end
     end
