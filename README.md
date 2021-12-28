@@ -1,10 +1,6 @@
-#Calculator in Ruby language
+# Calculator in Ruby language
 
-## Índice
 
-- [Stack](#stack)
-- [How To Run](#howtorun)
-- [Links](#links)
 
 ## Stack
 
